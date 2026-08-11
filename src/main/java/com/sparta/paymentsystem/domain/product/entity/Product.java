@@ -35,6 +35,7 @@ public class Product extends BaseTimeEntity {
         if (stock < 0) {
             throw new IllegalArgumentException("재고는 0 이상이어야 합니다");
         }
+        
         this.name = name;
         this.price = price;
         this.stock = stock;
